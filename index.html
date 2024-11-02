@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/style.css">
+    <link rel="stylesheet" href="./src/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./main.js"></script>
+    <title>Registration</title>
+</head>
+<body>
+
+  
+
+    <div id="container" class="my-bl container mx-auto py-40">
+        <h1 id = "title" class="text-2xl font-bold mb-6 text-center text-gray-50">Sign up</h1>
+        <form id="form" class=" w-full max-w-sm mx-auto bg-white p-8 rounded-md shadow-md">
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
+            <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-"
+              type="text" id="name" name="name" placeholder="John Doe">
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+            <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
+              type="email" id="email" name="email" placeholder="john@example.com">
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="password">Password</label>
+            <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
+              type="password" id="password" name="password" placeholder="********">
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="confirm-password">Confirm Password</label>
+            <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
+              type="password" id="confirm-password" name="confirm-password" placeholder="********">
+          </div>
+          <!-- <button
+            class="w-full bg-indigo-950 text-white text-sm font-bold py-2 px-4 rounded-md hover:bg-indigo-800 transition duration-300"
+            type="submit">Register</button> -->
+            <button class="group relative h-8 w-full overflow-hidden rounded-lg bg-indigo-950 text-lg font-bold text-white">
+              Register
+              <div class="absolute inset-0 h-full w-full scale-0 rounded-lg transition-all duration-300 group-hover:scale-100 group-hover:bg-white/25"></div>
+            </button>
+        </form>
+
+
+  
+        <div class="h-50  flex justify-center">
+          <div id="background" class="py-7 px-8 h-80 mt-7 bg-white rounded shadow-xl">
+            <form id="enter" action="">
+              <div class="mb-6">
+                <label for="name" class="block text-gray-800 font-bold text-sm">Login</label>
+                <input type="text" name="name" id="name" placeholder="login" class="w-full border border-gray-300 py-2 pl-3 rounded mt-2 outline-none focus:ring-indigo-600 :ring-indigo-600" />
+              </div>
+      
+              <div>
+                <label for="email" class="block text-gray-800 font-bold text-sm">Password</label>
+                <input type="text" name="email" id="email" placeholder="password" class="w-full border border-gray-300 py-2 pl-3 rounded mt-2 outline-none focus:ring-indigo-600 :ring-indigo-600" />
+      
+                <a href="#" class="text-sm font-thin text-gray-800 hover:underline mt-7 inline-block hover:text-indigo-600">Forget Password</a>
+              </div>
+              <button class="group relative h-8 w-full overflow-hidden rounded-lg bg-indigo-950 text-lg font-bold text-white mt-2">
+                Login
+                <div class="absolute inset-0 h-full w-full scale-0 rounded-lg transition-all duration-300 group-hover:scale-100 group-hover:bg-white/25"></div>
+              </button>
+            </form>
+          </div>
+        </div>
+
+
+
+        
+
+    <!-- <h1 class="text-3xl font-bold underline">
+        Hello world!
+      </h1> -->
+
+
+</body>
+</html>
